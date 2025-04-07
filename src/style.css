@@ -1,29 +1,20 @@
-:root {
-  --blue-color: #00acdc;
-}
+.body {
+  font-family: Roboto, sans-serif;
 
-html,
-body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
 
-body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  --blue-color: #00acdc;
+  --black-color: #000;
+  --white-color: #fff;
 }
 
 .header {
   display: flex;
-  width: 100%;
-  background-color: #fff;
-}
-
-.container {
-  display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--white-color);
   padding: 0 50px;
 }
 
@@ -47,10 +38,10 @@ body {
 
 .link {
   display: flex;
-  color: black;
+  color: var(--black-color);
   height: 60px;
-  margin-left: 20px;
   line-height: 60px;
+  margin-left: 20px;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
@@ -63,9 +54,9 @@ body {
 
 .is-active {
   color: var(--blue-color);
-  text-transform: uppercase;
   height: 60px;
   line-height: 60px;
+  text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   position: relative;
